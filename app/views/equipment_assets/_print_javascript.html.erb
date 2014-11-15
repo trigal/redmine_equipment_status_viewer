@@ -3,7 +3,8 @@
     $(document).ready(function() {
       $(".qrcode").each(function() {
         var e = $(this);
-        e.qrcode({width:80,height:80,text:e.attr('title')});
+        //e.qrcode({width:80,height:80,text:e.attr('title')});
+	e.qrcode({render:"table",width:74,height:74,text:e.attr('title')});
       });
     });
   })(jQuery);
